@@ -33,6 +33,7 @@ selected_state = st.sidebar.selectbox(
     sorted(df["State"].dropna().unique())
 )
 
+
 filtered_df = df[df["State"] == selected_state]
 
 st.title("US Accidents Data Dashboard")
